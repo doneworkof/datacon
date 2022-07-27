@@ -12,7 +12,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression, BayesianRidge
 from sklearn.tree import DecisionTreeRegressor
 #Загрузка БД
-data=pd.read_excel('3.xlsx')
+data=pd.read_csv('task 3.csv')
 #Добавление новых дескрипторов и их расчет
 data.insert(1, 'Volume', 0, False)
 data.insert(1, 'SSA', 0, False)
